@@ -1,0 +1,24 @@
+@import 'fonts/fonts';
+@import 'variables/variables';
+@import 'block/main';
+@import 'block/table';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: $font-type;
+}
+
+a {
+    text-decoration: none;
+}

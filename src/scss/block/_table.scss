@@ -1,0 +1,80 @@
+main {
+    .head {
+        margin: 0 auto;
+        text-align: center;
+
+        img {
+            max-width: 120px;
+            height: auto;
+            margin: 30px 0 20px;
+        }
+
+        h3 {
+            font-size: $font-body;
+            font-weight: $regular;
+            padding: 0 20px 20px 20px;
+            color: $primaryColor;
+            line-height: 1.3rem;
+
+        }
+    }
+
+    .body {
+        table {
+            font-size: $font-table;
+            border-collapse: collapse;
+            width: 90%;
+            position: relative;
+            max-height: 300px;
+            overflow-y: auto;
+
+            .table-head {
+                color: $lightColor;
+
+                tr {
+
+                    th {
+                        font-weight: $medium;
+                        line-height: 2.5rem;
+                        padding: 10px 10px 0 10px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .table-body {
+                background-color: $lightColor;
+                border-radius: 20px;
+                border: 0.5px solid $lightColor;
+
+                tr {
+                    border-bottom: 1px solid $primaryColor;
+
+                    td {
+                        font-weight: $regular;
+                        padding: 5px 10px;
+                        text-align: center;
+
+                    }
+                }
+            }
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 1026px) {
+    main {
+        .body {
+            table {
+                max-width: 900px;
+            }
+        }
+    }
+}
